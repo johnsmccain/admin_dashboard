@@ -1,0 +1,14 @@
+@import "../../styles/variable";
+.chart {
+  width: 100%;
+  box-sizing: border-box;
+  padding: $p-lg;
+  margin: $my-lg;
+  box-shadow: $box_shadow;
+  border-radius: 5px;
+  &__title {
+    margin-bottom: 20px;
+    color: $black;
+    text-transform: capitalize;
+  }
+}

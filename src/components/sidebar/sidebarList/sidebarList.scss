@@ -1,0 +1,19 @@
+.sidebarList {
+  display: flex;
+  align-items: center;
+  padding: 7px 0 7px 10px;
+  border-radius: 5px;
+  width: 100%;
+  color: #555;
+  cursor: pointer;
+  &.active {
+    background: rgba(pink, 0.3);
+  }
+  &:hover {
+    background: rgba(pink, 0.2);
+  }
+  &__icon {
+    font-size: 17px !important;
+    margin-right: 5px;
+  }
+}

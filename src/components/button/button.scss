@@ -1,0 +1,21 @@
+.btn {
+  padding: 7px;
+  border-radius: 7px;
+  text-transform: capitalize;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  &.pending {
+    background-color: #ebf1fe;
+    color: #3a7ade;
+  }
+  &.declined {
+    background-color: #fff0f1;
+
+    color: #d95087;
+  }
+  &.approved {
+    background-color: #e5faf2;
+    color: #3bb077;
+  }
+}

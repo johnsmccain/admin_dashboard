@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  /* background: #000; */
+
+  overflow-x: hidden;
+}
+.container {
+  display: flex;
+}
+.container__main {
+  flex: 4;
+  padding: 10px;
+  border-radius: 5px;
+  position: sticky;
+  overflow-y: scroll;
+  top: 50px;
+}
+.container__main::-webkit-scrollbar {
+  display: none;
+}
