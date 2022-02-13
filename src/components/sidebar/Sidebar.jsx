@@ -11,7 +11,11 @@ const Sidebar = () => {
           <h4 className="sidebar__container__menu__title">Dashboard</h4>
           <ul className="sidebar__container__menu__list">
             {dashboard.map((item) => (
-              <SidebarList Icon={item.Icon} title={item.title} />
+              <SidebarList
+                Icon={item.Icon}
+                title={item.title}
+                to={item.directory}
+              />
             ))}
           </ul>
         </div>
@@ -19,7 +23,11 @@ const Sidebar = () => {
           <h4 className="sidebar__container__menu__title">Quick Menu</h4>
           <ul className="sidebar__container__menu__list">
             {quickmenu.map((item) => (
-              <SidebarList Icon={item.Icon} title={item.title} />
+              <SidebarList
+                Icon={item.Icon}
+                title={item.title}
+                to={item.directory}
+              />
             ))}
           </ul>
         </div>
@@ -27,7 +35,11 @@ const Sidebar = () => {
           <h4 className="sidebar__container__menu__title">Notification</h4>
           <ul className="sidebar__container__menu__list">
             {notificaions.map((item) => (
-              <SidebarList Icon={item.Icon} title={item.title} />
+              <SidebarList
+                Icon={item.Icon}
+                title={item.title}
+                to={item.directory}
+              />
             ))}
           </ul>
         </div>
@@ -35,7 +47,11 @@ const Sidebar = () => {
           <h4 className="sidebar__container__menu__title">Staff</h4>
           <ul className="sidebar__container__menu__list">
             {staff.map((item) => (
-              <SidebarList Icon={item.Icon} title={item.title} />
+              <SidebarList
+                Icon={item.Icon}
+                title={item.title}
+                to={item.directory}
+              />
             ))}
           </ul>
         </div>

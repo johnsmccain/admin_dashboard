@@ -6,6 +6,8 @@
   width: 100%;
   color: #555;
   cursor: pointer;
+  text-decoration: none;
+
   &.active {
     background: rgba(pink, 0.3);
   }

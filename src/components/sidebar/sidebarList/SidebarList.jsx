@@ -1,12 +1,13 @@
 import React from "react";
-import { LineStyle } from "@mui/icons-material";
+// import { LineStyle } from "@mui/icons-material";
 import "./sidebarList.scss";
-const SidebarList = ({ Icon, title }) => {
+import { Link } from "react-router-dom";
+const SidebarList = ({ Icon, title, to }) => {
   return (
-    <li className="sidebarList">
+    <Link to={`${to}`} className="sidebarList">
       <Icon className="sidebarList__icon" />
       <span>{title}</span>
-    </li>
+    </Link>
   );
 };
 

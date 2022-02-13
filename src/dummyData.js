@@ -21,25 +21,25 @@ import pic8 from "./assets/07.png";
 import pic9 from "./assets/08.png";
 import pic10 from "./assets/09.png";
 export const dashboard = [
-  { title: "Home", Icon: LineStyle },
-  { title: "Analytics", Icon: Timeline },
-  { title: "Sales", Icon: TrendingUp },
+  { title: "Home", Icon: LineStyle, directory: "/" },
+  { title: "Analytics", Icon: Timeline, directory: "/analytics" },
+  { title: "Sales", Icon: TrendingUp, directory: "/sales" },
 ];
 export const quickmenu = [
-  { title: "Users", Icon: PersonOutline },
-  { title: "Products", Icon: Storefront },
-  { title: "Transactions", Icon: AttachMoney },
-  { title: "Reports", Icon: BarChart },
+  { title: "Users", Icon: PersonOutline, directory: "/users" },
+  { title: "Products", Icon: Storefront, directory: "/products" },
+  { title: "Transactions", Icon: AttachMoney, directory: "/transactions" },
+  { title: "Reports", Icon: BarChart, directory: "/reports" },
 ];
 export const notificaions = [
-  { title: "Mail", Icon: MailOutline },
-  { title: "Feedback", Icon: DynamicFeed },
-  { title: "Messages", Icon: MailOutline },
+  { title: "Mail", Icon: MailOutline, directory: "/mail" },
+  { title: "Feedback", Icon: DynamicFeed, directory: "/feedback" },
+  { title: "Messages", Icon: MailOutline, directory: "/messages" },
 ];
 export const staff = [
-  { title: "Manage", Icon: ManageAccounts },
-  { title: "Analytics", Icon: Timeline },
-  { title: "Reports", Icon: BarChart },
+  { title: "Manage", Icon: ManageAccounts, directory: "/manage" },
+  { title: "Analytics", Icon: Timeline, directory: "/analytics" },
+  { title: "Reports", Icon: BarChart, directory: "/reports" },
 ];
 
 export const card__data = [
@@ -118,9 +118,10 @@ export const user__data = [
     image: pic1,
     title: "software engineer",
     date: "22 jun 2022",
-    amount: 234,
+    amount: "$234",
     status: "pending",
     active: "active",
+    email: "musa@gmail.com",
   },
   {
     id: 2,
@@ -128,9 +129,10 @@ export const user__data = [
     image: pic2,
     title: "software hacker",
     date: "21 dec 2100",
-    amount: 8945,
+    amount: "$8,945",
     status: "declined",
     active: "active",
+    email: "musa@gmail.com",
   },
   {
     id: 3,
@@ -138,9 +140,10 @@ export const user__data = [
     image: pic3,
     title: "software distroyer",
     date: "01 aug 2043",
-    amount: 900,
+    amount: "$900",
     status: " approved",
     active: "active",
+    email: "musa@gmail.com",
   },
   {
     id: 4,
@@ -148,9 +151,10 @@ export const user__data = [
     image: pic4,
     title: "indomin tester",
     date: "9 sep 2050",
-    amount: 437438,
+    amount: "$437,438",
     status: "pending",
     active: "active",
+    email: "musa@gmail.com",
   },
   {
     id: 5,
@@ -158,9 +162,10 @@ export const user__data = [
     image: pic5,
     title: "j.t.f commandan ",
     date: "1 jan 2022",
-    amount: 2000,
+    amount: "$2,000",
     status: "declined",
     active: "active",
+    email: "musa@gmail.com",
   },
   {
     id: 6,
@@ -168,9 +173,10 @@ export const user__data = [
     image: pic6,
     title: "smiley face",
     date: "7 jul 2021",
-    amount: 3455,
+    amount: "$3,455",
     status: "approved",
     active: "active",
+    email: "musa@gmail.com",
   },
   {
     id: 7,
@@ -178,9 +184,10 @@ export const user__data = [
     image: pic7,
     title: "smiley face",
     date: "7 jul 2021",
-    amount: 5474,
+    amount: "$5,474",
     status: "approved",
     active: "active",
+    email: "musa@gmail.com",
   },
   {
     id: 8,
@@ -188,9 +195,10 @@ export const user__data = [
     image: pic8,
     title: "q & a tester",
     date: "8 jul 2021",
-    amount: 475,
+    amount: "$475",
     status: "declined",
     active: "active",
+    email: "musa@gmail.com",
   },
   {
     id: 9,
@@ -198,9 +206,10 @@ export const user__data = [
     image: pic9,
     title: "cnc programmer",
     date: "9 jul 2021",
-    amount: 565,
+    amount: "$565",
     status: "approved",
     active: "active",
+    email: "musa@gmail.com",
   },
   {
     id: 10,
@@ -208,8 +217,9 @@ export const user__data = [
     image: pic10,
     title: "hacker",
     date: "10 jul 2021",
-    amount: 556,
+    amount: "$556",
     status: "pending",
     active: "active",
+    email: "musa@gmail.com",
   },
 ];

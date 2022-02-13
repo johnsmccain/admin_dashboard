@@ -1,0 +1,36 @@
+@import "../../styles/variable";
+
+.userList {
+  width: 100%;
+  height: calc(100vh - 70px);
+  &__edit {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+      color: white;
+      background: $primary;
+    }
+  }
+  &__delete {
+    color: red;
+    cursor: pointer;
+    margin-left: 7px;
+  }
+  &-user {
+    display: flex;
+    align-items: center;
+    p {
+      text-transform: capitalize;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    &-img {
+      width: 40px;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+  }
+}
