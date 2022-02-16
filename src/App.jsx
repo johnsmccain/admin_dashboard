@@ -5,7 +5,7 @@ import Topbar from "./components/topbar/Topbar";
 import Home from "./pages/home/Home";
 import { Userlist } from "./pages/userlist/Userlist";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import User from "./pages/User/User";
+import User from "./pages/user/User";
 
 // import { Switch } from "react-router-dom";
 function App() {
