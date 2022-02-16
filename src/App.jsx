@@ -5,6 +5,7 @@ import Topbar from "./components/topbar/Topbar";
 import Home from "./pages/home/Home";
 import { Userlist } from "./pages/userlist/Userlist";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import User from "./pages/User/User";
 // import { Switch } from "react-router-dom";
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/users" element={<Userlist />} />
+            <Route path="/user/:userId" element={<User />} />
           </Routes>
         </div>
       </div>

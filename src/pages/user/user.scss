@@ -1,0 +1,68 @@
+@import "../../styles/variable";
+.user {
+  width: 100%;
+  margin-top: 10px;
+  flex: 1;
+  &__title-container {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: $box_shadow;
+    padding: 10px;
+    border-radius: 5px;
+    &__title {
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    &__btn {
+      padding: 10px;
+      border: none;
+      text-transform: capitalize;
+      font-weight: 300;
+      color: white;
+      background: $primary;
+      border-radius: 5px 7px;
+      cursor: pointer;
+    }
+  }
+  &__container {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    &__details {
+      box-shadow: $box_shadow;
+      flex: 1;
+      &__top {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        &-image {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+        &__info {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          &-username {
+            font-weight: 600;
+            text-transform: capitalize;
+          }
+          &-title {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 14px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+    &__update {
+      box-shadow: $box_shadow;
+      flex: 2;
+      margin-left: 20px;
+    }
+  }
+}
