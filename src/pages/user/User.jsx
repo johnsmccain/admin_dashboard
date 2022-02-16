@@ -3,7 +3,6 @@ import {
   EmailOutlined,
   LocationSearchingOutlined,
   Person,
-  PersonAddAlt1Outlined,
   PhoneAndroidOutlined,
 } from "@mui/icons-material";
 import React from "react";
