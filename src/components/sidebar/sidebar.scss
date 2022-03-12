@@ -12,6 +12,15 @@
       left: -1000px;
     }
   }
+  &#show-for-mobile{
+    @media screen and (max-width: 800px) {
+      position: absolute;
+      left: 0px;
+      z-index: 8888;
+      background: #eee;
+    }
+
+  }
 
   height: calc(100vh - 50px);
   &__container {
@@ -34,3 +43,4 @@
     }
   }
 }
+

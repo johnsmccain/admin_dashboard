@@ -8,7 +8,11 @@ import {
 import "./topbar.scss";
 import avarter from "../../assets/0.png";
 import logo from "../../assets/opensea.png";
+import { useDispatch } from "react-redux";
+import { toggler } from "../../store/toggleSlice";
+
 const Topbar = () => {
+  const dispatch = useDispatch();
   return (
     <header className="topbar">
       <div className="topbar__container">
@@ -30,8 +34,10 @@ const Topbar = () => {
           </div>
           <img src={avarter} alt="" />
         </div>
-
-        <MenuOpen className="topbar__container__icon" />
+        <MenuOpen
+          className="topbar__container__icon"
+          onClick={() => dispatch(toggler())}
+        />
       </div>
     </header>
   );

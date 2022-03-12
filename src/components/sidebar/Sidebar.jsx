@@ -1,11 +1,17 @@
-import React from "react";
+// import React,{useState} from "react";
 import "./sidebar.scss";
 import SidebarList from "./sidebarList/SidebarList";
-
+// const [toggle, setToggle] = useState(false);
 import { dashboard, quickmenu, notificaions, staff } from "../../dummyData";
+import { useSelector } from "react-redux";
 const Sidebar = () => {
+  const toggler = useSelector((state) => state.toggler.isToggle);
+  console.log(toggler);
   return (
-    <div className="sidebar hide-for-mobile">
+    <div
+      className={`sidebar hide-for-mobile `}
+      id={toggler && "show-for-mobile"}
+    >
       <div className="sidebar__container">
         <div className="sidebar__container__menu">
           <h4 className="sidebar__container__menu__title">Dashboard</h4>

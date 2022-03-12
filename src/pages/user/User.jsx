@@ -4,6 +4,7 @@ import {
   LocationSearchingOutlined,
   Person,
   PhoneAndroidOutlined,
+  Publish,
 } from "@mui/icons-material";
 import React from "react";
 import { user__data } from "../../dummyData";
@@ -76,7 +77,86 @@ const User = () => {
             </ul>
           </div>
         </div>
-        <div className="user__container__update">update</div>
+        <div className="user__container__update">
+          <h2 className="user__container__update-title">edit</h2>
+          <form className="user__container__update__form">
+            <div className="user__container__update__form__group">
+              <label className="user__container__update__form__group-title">
+                username
+              </label>
+              <input
+                type="text"
+                className="user__container__update__form__group-control"
+                placeholder=""
+                required
+              />
+            </div>
+            <div className="user__container__update__form__group">
+              <label className="user__container__update__form__group-title">
+                full name
+              </label>
+              <input
+                type="text"
+                className="user__container__update__form__group-control"
+                placeholder="dogara jafaru"
+                required
+              />
+            </div>
+            <div className="user__container__update__form__group">
+              <label className="user__container__update__form__group-title">
+                email
+              </label>
+              <input
+                type="email"
+                className="user__container__update__form__group-control"
+                placeholder="dogara@gmail.com"
+                required
+              />
+            </div>
+            <div className="user__container__update__form__group">
+              <label className="user__container__update__form__group-title">
+                phone
+              </label>
+              <input
+                type="number"
+                className="user__container__update__form__group-control"
+                placeholder="823942933"
+                required
+              />
+            </div>
+            <div className="user__container__update__form__group">
+              <label className="user__container__update__form__group-title">
+                address
+              </label>
+              <input
+                type="text"
+                className="user__container__update__form__group-control"
+                placeholder="ENYA | KABURASHA"
+                required
+              />
+            </div>
+          </form>
+          <div className="user__container__update__right">
+            <div className="user__container__update__right__profile">
+              <img
+                src={user__data[3].image}
+                alt=""
+                className="user__container__update__right__profile-avatar"
+              />
+
+              <label
+                htmlFor="upload"
+                className="user__container__update__right__profile-icon"
+              >
+                <Publish />
+                <input type="file" style={{ display: "none" }} id="upload" />
+              </label>
+            </div>
+            <button className="user__container__update__right-btn">
+              update
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

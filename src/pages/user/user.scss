@@ -29,6 +29,7 @@
     width: 100%;
     margin-top: 10px;
     padding-top: 10px;
+    flex-direction: column;
     &__details {
       box-shadow: $box_shadow;
       flex: 1;
@@ -58,11 +59,113 @@
           }
         }
       }
+      &__bottom {
+        padding: 20px;
+        &-title {
+          font-size: 14px;
+          color: #aaa;
+          text-transform: capitalize;
+          margin-top: 20px;
+          display: block;
+        }
+        &__list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          color: #444;
+          &__item {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            &-icon {
+              font-size: 16px !important;
+
+              margin-right: 10px;
+            }
+          }
+        }
+      }
     }
     &__update {
       box-shadow: $box_shadow;
       flex: 2;
       margin-left: 20px;
+      @media screen and (max-width: 500px){
+        margin:1rem 0;
+        padding: 1rem;
+        
+      }
+
+      &-title {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+      }
+      &__form {
+        margin: 20px 10px;
+        @media screen and (max-width: 500px){
+          width: 60%;
+        }
+
+        &__group {
+          display: flex;
+          flex-direction: column;
+          &-title {
+            font-size: 13px;
+            color: #444;
+            text-transform: capitalize;
+          }
+          &-control {
+            border: none;
+            border-bottom: 1px solid gray;
+            color: #444 !important;
+            outline: none;
+            padding: 10px;
+            width: 120px;
+            margin: 10px 0;
+            &:hover {
+              width: 100%;
+            }
+          }
+        }
+        float: left;
+        width: 40%;
+      }
+      &__right {
+        float: right;
+        width: 50%;
+        @media screen and (max-width: 500px){
+          width: 30%;
+        }
+        &__profile {
+          width: 100%;
+          display: flex;
+          align-items: center;
+
+          &-avatar {
+            width: 70px;
+            border-radius: 7px;
+            object-fit: cover;
+            margin-right: 10px;
+          }
+          &-icon {
+            cursor: pointer;
+          }
+        }
+
+        &-btn {
+          background: $primary;
+          width: 100px;
+          padding: 5px 0;
+          text-transform: capitalize;
+          border: none;
+          border-radius: 5px;
+          margin-top: 10px;
+          cursor: pointer;
+          color: #fff;
+        }
+      }
     }
   }
 }
