@@ -1,27 +1,20 @@
 .sidebar {
   flex: 1;
   position: sticky;
-  top: 50px;
+  top: 70px;
   overflow-y: scroll;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  &.hide-for-mobile {
-    @media screen and (max-width: 800px) {
-      position: absolute;
-      left: -1000px;
-    }
-  }
-  &#show-for-mobile{
-    @media screen and (max-width: 800px) {
-      position: absolute;
-      left: 0px;
-      z-index: 8888;
-      background: #eee;
-    }
-
+  background-color: #eee;
+  @media screen and (max-width: 800px) {
+    position: fixed;
+    flex: 9;
+    width:80%;
+    height:calc(100vh - 70px) ;
   }
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
   height: calc(100vh - 50px);
   &__container {
     padding: 10px;
@@ -43,4 +36,27 @@
     }
   }
 }
+#show-for-mobile{
+  @media screen and (max-width: 800px) {
+    position: absolute;
+    left: 0px;
+    z-index: 8888; 
+}}
 
+.hide-for-mobile {
+  @media screen and (max-width: 800px) {
+    position: absolute;
+    left: -1000px;
+  }
+}
+  .overlay{
+    z-index: 12;
+    overflow: hidden;
+      @media screen and (max-width: 800px) {
+        position: fixed;
+        width:100%;
+        height:calc(100vh - 70px) ;
+        background-color: rgba(black, 0.9);
+      } 
+    
+}

@@ -8,17 +8,27 @@ body {
   /* background: #000; */
 
   overflow-x: hidden;
+  height: 100vh;
 }
 .container {
   display: flex;
 }
+@media screen and (max-width: 800px) {
+  .container {
+    display: block;
+  }
+  
+  }
 .container__main {
   flex: 4;
   padding: 10px;
   border-radius: 5px;
-  position: sticky;
+  position: relative;
   overflow-y: scroll;
   top: 50px;
+  display: block;
+  margin-top: 70px;
+  z-index: 11;
 }
 .container__main::-webkit-scrollbar {
   display: none;
